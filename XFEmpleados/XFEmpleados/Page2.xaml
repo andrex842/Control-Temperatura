@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFEmpleados.Page2">
+    <ScrollView>
+
+        <Grid>
+
+            <Image Source="Pgmn.png" Aspect="AspectFill"/>
+            <BoxView Color="White" Opacity="0.3" />
+
+            <StackLayout Padding="10" Spacing="10">
+            
+            <Grid>
+
+                <Grid>
+                   
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+                        <Image Grid.Row="0" Source="LogoServa.png"  HorizontalOptions="StartAndExpand"/>
+
+                </Grid>
+
+            </Grid>
+            <StackLayout>
+                <Label Text="El Autocuidado es Cuestion de Todos!"
+                    Font="24"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                     FontSize="Medium"/>
+            </StackLayout >
+               
+                <Label x:Name="labelTexto1"
+                Text="Para Empezar!"
+                Font="18"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Black"
+                FontSize="Medium"/>
+              
+              <Picker x:Name="Pkos"
+                      Title="Seleccione el Usuario..."
+                      TitleColor="Navy"
+                      TextColor="Navy"
+                      HorizontalOptions="CenterAndExpand"
+                      SelectedIndexChanged="Pkos_SelectedIndexChanged"/>
+              
+                             
+                <Label x:Name="labelTexto2"
+                Text=""
+                Font="2"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Transparent"
+                FontSize="Medium"/>
+               
+              <StackLayout>
+                <Label x:Name="labelTexto3"
+                Text="Ingrese su Identificacion"
+                Font="18"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Black"
+                FontSize="Medium"/>
+
+                    <Entry Keyboard="Numeric" x:Name="IdentificacionEntry"
+                    Placeholder="Identificacion..."
+                    
+                    PlaceholderColor="Navy"
+                 HorizontalOptions="CenterAndExpand"
+                 TextColor="Navy"
+                 FontSize="Medium"/>
+              </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    
+                    
+                <Button x:Name="StarBtn"
+                Text="Ingresar"
+                Font="10"
+                WidthRequest ="80"
+                HeightRequest="80"
+                CornerRadius="40"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions ="CenterAndExpand"
+                TextColor="White" 
+                Opacity="0.8"
+                BackgroundColor="Navy"/>
+                <Button x:Name="verBtn1"
+                Text="Ver Datos"
+                Font="12"
+                WidthRequest ="90"
+                HeightRequest="90"
+                CornerRadius="45"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions ="CenterAndExpand"
+                TextColor="White" 
+                Opacity="0.8"
+                BackgroundColor="Green"/>
+
+                <Button x:Name="Exit"
+                Text="Salir"
+                Font="12"
+                WidthRequest ="65"
+                HeightRequest="65"
+                CornerRadius="30"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions ="CenterAndExpand"
+                TextColor="White" 
+                
+                BackgroundColor="Red"/>
+
+                </StackLayout>
+
+
+
+
+
+
+        </StackLayout>
+
+
+      </Grid>
+
+
+    </ScrollView>
+
+</ContentPage>

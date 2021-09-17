@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFEmpleados"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="XFEmpleados.Page3">
+    <ScrollView>
+
+      <Grid>
+            <Image Source="Pgmn" Aspect="AspectFill"/>
+            <BoxView Color="White" Opacity="0.3" />
+            <StackLayout Padding="10" Spacing="10">
+          
+                <Grid>
+
+
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="LogoServa.png"  HorizontalOptions="StartAndExpand"/>
+
+                </Grid>
+
+                <Label Text="El Autocuidado es Cuestion de Todos!"
+                    Font="24"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                     FontSize="Medium"/>
+
+
+                <Entry x:Name="NombresEntry"
+                   Placeholder="Ingrese su Nombre!"
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                   
+                TextColor="Navy"/>
+            
+            <Entry Keyboard="Numeric" x:Name="IdentificacionEntry"
+                   Placeholder="Ingrese su Identificacion! "
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                TextColor="Navy"/>
+            
+            <Entry Keyboard="Numeric" x:Name="TelEntry"
+                   Placeholder="Contacto En caso de Emergencia! "
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                TextColor="Navy"/>
+
+                <Entry x:Name="AutoEntry"
+                   Placeholder="Autorizado por...! "
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                TextColor="Navy"/>
+
+                <Entry x:Name="MotEntry"
+                   Placeholder="Motivo Ingreso...! "
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                TextColor="Navy"/>
+
+                <Label x:Name="Label1"
+                Text="Seleccione; Usted a tenido Gripa, Tos seca, Fiebre, Perdida de olfato o Gusto?"
+                TextColor="Black"/>
+
+
+            <controls:CheckBox x:Name="checkBox5" 
+                               DefaultText="SI    "
+                               HorizontalOptions="StartAndExpand"
+                               FontSize="18"
+                               
+                               FontName="AmericanTypeWriter"/>
+
+            <controls:CheckBox x:Name="checkBox6" 
+                               DefaultText="NO  "
+                               HorizontalOptions="StartAndExpand"
+                               FontSize="18"
+                            
+                               FontName="AmericanTypeWriter"/>
+
+
+            <Label x:Name="Pregunta1Entry"
+                HorizontalOptions="CenterAndExpand"
+               TextColor="Transparent"/>
+
+            <Label x:Name="Label2"
+                Text="Responda; Usted a tenido Contacto con alguna persona contiagada con COVID-19 ?"
+                TextColor="Black"/>
+
+            <controls:CheckBox x:Name="checkBox7"
+                               DefaultText="SI    "
+                               FontSize="18"
+                               HorizontalOptions="StartAndExpand"
+                              
+                               FontName="AmericanTypeWriter"/>
+            <controls:CheckBox x:Name="checkBox8"
+                               DefaultText="NO  "
+                               
+                               
+                               HorizontalOptions="StartAndExpand"
+                               FontSize="18"
+                               
+                               FontName="AmericanTypeWriter"/>
+
+
+
+            <Label x:Name="Pregunta2Entry"
+                    HorizontalOptions="CenterAndExpand"
+                TextColor="Transparent"/>
+
+            
+            <Entry Keyboard="Numeric" x:Name="TemperaturaEntry"
+                  Placeholder=" Ingrese Su Temperatura!"
+                   HorizontalOptions="CenterAndExpand"
+                   PlaceholderColor="Navy"
+                TextColor="Navy"/>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                    <Label Text="Acceso"
+                    Font="14"
+                     VerticalOptions="Center"
+                     TextColor="Navy"/>
+                    <controls:CheckBox x:Name="checkBox9"
+                                DefaultText="Ingreso"
+                                VerticalOptions="Center"
+                                FontSize="14"
+                                FontName="AmericanTypeWriter"/>
+                    <controls:CheckBox x:Name="checkBox0"
+                                DefaultText="Salida"
+                                VerticalOptions="Center"
+                                FontSize="14"
+                                FontName="AmericanTypeWriter"/>
+                    <Label x:Name="LabelIngIn"
+                        Font="2"
+                        VerticalOptions="Center"
+                        TextColor="Transparent"/>
+                    </StackLayout >
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Fecha:"
+                    Font="14"
+                    VerticalOptions="Center"
+                    TextColor="Navy"/>
+
+                    <DatePicker x:Name="FechaSelectet"
+                      TextColor="Navy"
+                      DateSelected="Fecha_DateSelected"
+                      HorizontalOptions="CenterAndExpand"/>
+
+
+                    <Label x:Name="ResulF"
+                        VerticalOptions="Center"
+                        TextColor="Transparent"/>
+
+
+                </StackLayout>
+
+                <StackLayout>
+                <Button x:Name="GuardarBtn2"
+                  Text="Almacenar Datos"
+                  Font="10"
+                  WidthRequest ="90"
+                  HeightRequest="90"
+                CornerRadius="45"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions ="CenterAndExpand"
+                TextColor="White"
+                Opacity="0.8"
+                BackgroundColor="Navy"/>
+                  <Button x:Name="verBtn2"
+                  Text="Ver Datos"
+                  Font="12"
+                  WidthRequest ="90"
+                  HeightRequest="90"
+                  CornerRadius="45"
+                  VerticalOptions="CenterAndExpand"
+                  HorizontalOptions ="CenterAndExpand"
+                  TextColor="White"
+                  Opacity="0.8"
+                  BackgroundColor="Green"/>
+                <Button x:Name="ComunicarmeBtn2"
+                 Text="EMERGENCIA"
+                 Font="10"
+                 WidthRequest ="100"
+                 HeightRequest="100"
+                 CornerRadius="50"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions ="CenterAndExpand"
+                 TextColor="White"
+                 BackgroundColor="Red"/>
+
+                </StackLayout>
+        </StackLayout>
+
+      </Grid>
+
+    </ScrollView>
+
+</ContentPage>

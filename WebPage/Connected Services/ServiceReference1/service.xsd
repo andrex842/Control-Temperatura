@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/AplicacionWebServicePOO" />
+  <xs:element name="GetEmpleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDEmpleado" type="xs:int" />
+        <xs:element minOccurs="0" name="TelContac" type="xs:long" />
+        <xs:element minOccurs="0" name="Temperatura" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Jornada" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Autoriza" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Motivo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaDia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pregunta1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pregunta2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpleadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AplicacionWebServicePOO" minOccurs="0" name="GetEmpleadoResult" nillable="true" type="q1:Empleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

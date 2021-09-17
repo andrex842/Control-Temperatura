@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFEmpleados.Page1">
+    <ScrollView>
+        <Grid>
+            <Image Source="Pgmn.png" Aspect="AspectFill"/>
+            <BoxView Color="White" Opacity="0.3" />
+            <StackLayout Padding="10" Spacing="10">
+              
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="LogoServa.png"  HorizontalOptions="StartAndExpand"/>
+
+                </Grid>
+                
+                <Label Text="El Autocuidado es Cuestion de Todos!"
+                    Font="24"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                     FontSize="Medium"/>
+
+
+                <Label x:Name="Cont"
+                        Text=""
+                    Font="1"
+                    HorizontalOptions="Start"
+                    TextColor="Transparent"
+                    FontSize="Micro"/>
+
+                <Label x:Name="statusInternet"
+                        Text=""
+                    Font="1"
+                    HorizontalOptions="Center"
+                    TextColor="Navy"
+                    FontSize="Micro"/>
+
+
+                <Label Text="ACUÑA MANRIQUE LUZ GLADYS CC.39638872"
+                    Font="24"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Navy"
+                    FontSize="Medium"/>
+                <StackLayout>
+                    
+                    <Button x:Name="ActualiBtn"
+                    Text="Enviar"
+                    Font="8"
+                    WidthRequest ="60"
+                    HeightRequest="60"
+                    CornerRadius="30"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions ="EndAndExpand"
+                    TextColor="Black"
+                    BackgroundColor="LightGreen"/>
+
+                    
+                    
+                </StackLayout>
+
+                <StackLayout>
+
+
+                    <ListView x:Name="datosListView"
+                              HasUnevenRows="True" />
+                    
+
+                </StackLayout>
+
+                
+
+            </StackLayout>
+            
+
+            
+
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

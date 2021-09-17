@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="620e1bb9-2ad2-445a-b1d7-8bfdcd9060ff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/AplicacionWebServicePOO/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="09bb8ccc-cc8b-4663-bc39-1ff9f1550afb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/AplicacionWebServicePOO/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="113b7b29-301a-49ac-a614-fbdbfcaee7a0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/AplicacionWebServicePOO/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2d6ad3c9-f36e-4a87-be0c-584c391862dc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/AplicacionWebServicePOO/Service1/mex" />
+    <MetadataFile FileName="AplicacionWebServicePOO.xsd" MetadataType="Schema" ID="af973dcb-3a4b-4d8d-bf50-9f6e4ba9ba97" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/AplicacionWebServicePOO/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
